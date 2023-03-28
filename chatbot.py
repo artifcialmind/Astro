@@ -3,9 +3,19 @@ var = ''
 with open('user_info/New Text Document.txt', 'r') as f1:
     var = f1.readlines()
     f1.close()
-openai.api_key = var
+
+def decr(var):
+    t1 = ''
+    for i in range(len(var[0])):
+        if var[0][i] != '#':
+            t1 += var[0][i]
+    return t1
+
+
+#openai.api_key = var
 model_engine = 'gpt-3.5-turbo'
 def generate_response(prompt):
+    openai.api_key = decr(var)
     prompt.lower()
     if len(prompt) == 0:
         return "What can i help you with?"
@@ -24,9 +34,9 @@ def generate_response(prompt):
     message = completions.choices[0].text
     return message.strip()
 
-#while True:
-    #prompt = input("Enter your question: ")
-    #response = generate_response(prompt)
-    #print(list(response))
+'''while True:
+    prompt = input("Enter your question: ")
+    response = generate_response(prompt)
+    print(list(response))
 
-    #print(response)
+    print(response)'''
