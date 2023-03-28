@@ -12,3 +12,6 @@ To run the software, click on main2.py and make sure you have following librarie
 7)Pillow
 8)numpy
 9)speech_recognition
+
+
+For reviewing the conversation sentiment, close the application, run it again, click on analysis. You have to make an account by clicking on sign up. After that click on login(after clicking on analysis button), enter details and once logged in it will show details of the conversation. 
