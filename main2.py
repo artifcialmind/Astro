@@ -243,7 +243,7 @@ def get_screen1(path):
             anim = root2.after(40, lambda: animation(count % 22, start, inital+1, max_reps))
 
 #......................................CHAT BUTTON (DO NOT INTERFERE).........................................................
-    img2 = ImageTk.PhotoImage(file="C:/Users/91797/OneDrive/Desktop/ExperimentingVideoFrames/Frames-1/frame0.jpg")
+    img2 = ImageTk.PhotoImage(file="Frames-1/frame0.jpg")
     limg = Label(root2, i=img2)
     limg.pack()
     text = tk.Text(root2, height=4, width=50, foreground='#ffffff', background='black',
@@ -313,13 +313,13 @@ def get_screen1(path):
 
 
 #start screen
-img = ImageTk.PhotoImage(file="C:/Users/91797/OneDrive/Desktop/ExperimentingVideoFrames/Frames-1/frame0.jpg")
+img = ImageTk.PhotoImage(file="Frames-1/frame0.jpg")
 canvas.create_image((300, 300), image=img, anchor='center')
 font_1 = tkinter.font.Font(weight="bold")
 font_2 = tkinter.font.Font(weight='bold', size=28)
 button1_text = tk.StringVar()
 button1 = tk.Button(root, textvariable=button1_text, background='black', foreground='white',
-                    font=font_1, width=25, height=2, command=lambda: get_screen1("C:/Users/91797/OneDrive/Desktop/ExperimentingVideoFrames/Frames-1"))
+                    font=font_1, width=25, height=2, command=lambda: get_screen1("Frames-1"))
 button1_text.set("Chat")
 button1.grid(column=0, row=2)
 
