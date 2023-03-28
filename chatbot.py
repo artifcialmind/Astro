@@ -1,5 +1,9 @@
 import openai
-openai.api_key = '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'
+var = ''
+with open('user_info/New Text Document.txt', 'r') as f1:
+    var = f1.readlines()
+    f1.close()
+openai.api_key = var
 model_engine = 'gpt-3.5-turbo'
 def generate_response(prompt):
     prompt.lower()
